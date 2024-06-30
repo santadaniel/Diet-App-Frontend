@@ -1,38 +1,113 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h2 {
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Diet-Button {
+  border: 2px solid transparent;
+  --color-primary-light: #030086;
+  --color-secondary-light: #0804b8;
+  --color-disabled-light: lightblue;
+
+  --color-primary-dark: lightblue;
+  --color-secondary-dark: #dfdeff;
+  --color-text-dark: black;
+  --color-disabled-dark: #d9d8d9;
+  --color-disabled-text-dark: lightblue;
+
+  --color-white: #fff;
+  --font-family: "Lucida Console", Monaco, monospace;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  padding: 10px 60px;
+  border-radius: 2px;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: background-color 0.1s linear, color 0.1s linear,
+  border 0.1s linear, outline 0.1s linear;
+}
+
+.p {
+  font-family: 'Georgia', serif;
+  font-size: 22px;
+  color: #d3d3d3;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.list-image {
+  width: 240px;
+  height: 240px;
+  align-self: center;
+}
+
+.list-Button1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  list-style: none;
+  text-align: center;
+}
+
+.list-Button2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.list {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  list-style: none;
+  text-align: center;
+  color: white;
+}
+
+.list-buttons {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-left: 390px;
+  margin-right: 390px;
+  padding: 0;
+}
+
+.list-items {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-left: 360px;
+  margin-right: 360px;
+  padding: 0;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
