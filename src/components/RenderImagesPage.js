@@ -28,7 +28,7 @@ const RenderImagesPage = ({url, itemsName, handleBackClick}) => {
                 {items.map((item, index) => (
                     <li className="list" key={index}>
                         <p className="p">{item}</p>
-                        <img src={require(`../res/${itemsName}/${item}.jpeg`)}
+                        <img src={require(`../../res/${itemsName}/${item}.jpeg`)}
                              alt={`${itemsName} ${item}`}
                              className="list-image"
                         />
